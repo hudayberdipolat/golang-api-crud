@@ -28,6 +28,7 @@ func GetAppDependencies() AppDependencies {
 	}
 
 	httpClient := customHttp.NewHttpClient()
+
 	return AppDependencies{
 		DB:         dbConnect,
 		AppConfig:  getConfig,

@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "b2a30838-72bb-4614-ab44-f09cced18225",
+		"name": "golang-api-crud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31575669"
+	},
+	"item": [
+		{
+			"name": "get All post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/posts",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get One post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/posts/12",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"posts",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "post_title",
+							"value": "post title 3",
+							"type": "text"
+						},
+						{
+							"key": "post_desc",
+							"value": "post desc 3",
+							"type": "text"
+						},
+						{
+							"key": "post_image",
+							"type": "file",
+							"src": "download (2).jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/posts/create",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"posts",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update post",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "post_title",
+							"value": "post title update",
+							"type": "text"
+						},
+						{
+							"key": "post_desc",
+							"value": "post desc update",
+							"type": "text"
+						},
+						{
+							"key": "post_image",
+							"type": "file",
+							"src": "/home/pc/Pictures/Screenshots/Screenshot from 2024-01-22 15-41-06.png"
+						},
+						{
+							"key": "old_image",
+							"value": "public/postImages/692b35cf028a49628dbe2f7a58ca923d.png",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/posts/10/update",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"posts",
+						"10",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete post",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

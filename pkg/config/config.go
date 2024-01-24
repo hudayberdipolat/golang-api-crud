@@ -5,6 +5,8 @@ import "github.com/ilyakaznacheev/cleanenv"
 type Config struct {
 	DbConfig     dbConfig     `json:"db_config"`
 	ServerConfig serverConfig `json:"server_config"`
+	PublicPath   string       `json:"public_path" env:"PUBLIC_PATH"`
+	RootPath     string       `json:"root_path" env:"ROOT_PATH"`
 }
 
 type dbConfig struct {
